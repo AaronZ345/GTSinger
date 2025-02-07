@@ -30,11 +30,11 @@ Also, you can visit our [Demo Page](https://gtsinger.github.io/) for the audio s
 
 ✅ Release the full dataset.
 
-✅ Release the processed data of each language.
-
 ✅ Refine the paired speech data of each language.
 
 ✅ Refine Chinese, English, Spanish, German, Russian, French, Italian annotations.
+
+🔲 Release the processed data of each language （in a few days).
 
 🔲 Further refine Japanese, Korean annotations.
 
