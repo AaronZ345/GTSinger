@@ -20,6 +20,7 @@ Also, you can visit our [Demo Page](https://gtsinger.github.io/) for the audio s
 
 ## News
 
+- 2025.02: We released all processed data of GTSinger and refined 7/9 languages!
 - 2024.09: We released the full dataset of GTSinger!
 - 2024.09: GTSinger is accepted by NeurIPS 2024 (Spotlight)!
 - 2024.05: We released the code of GTSinger!
@@ -32,9 +33,9 @@ Also, you can visit our [Demo Page](https://gtsinger.github.io/) for the audio s
 
 ✅ Refine the paired speech data of each language.
 
-✅ Refine Chinese, English, Spanish, German, Russian, French, Italian annotations.
+✅ Release the processed data of each language and all data.
 
-🔲 Release the processed data of each language （in a few days).
+✅ Refine Chinese, English, Spanish, German, Russian, French, Italian annotations.
 
 🔲 Further refine Japanese, Korean annotations.
 
