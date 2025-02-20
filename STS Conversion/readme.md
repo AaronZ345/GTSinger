@@ -1,6 +1,6 @@
 # STS Conversion
 
-**This is a referenc version, please use [TCSinger](https://github.com/AaronZ345/TCSinger) for better technique control!**
+**This is a referenc version, please use [TCSinger](https://github.com/AaronZ345/TCSinger) or [AlignSTS](https://github.com/RickyL-2000/AlignSTS) for better technique control!**
 
 Download GTSinger and try STS conversion.
 
