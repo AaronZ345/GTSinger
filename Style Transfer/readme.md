@@ -1,6 +1,6 @@
 # Style Transfer
 
-**Please refer to [StyleSinger](https://github.com/AaronZ345/StyleSinger) for more detailed instructions!!!**
+**This is a referenc version, please use [StyleSinger](https://github.com/AaronZ345/StyleSinger) or [TCSinger](https://github.com/AaronZ345/TCSinger) for better technique control!**
 
 ### Data Preparation 
 
