@@ -1,5 +1,7 @@
 # Technique-Controllable SVS
 
+**This is a referenc version, please use TCSinger for technique control!**
+
 ### Data Preparation 
 
 1. Downlowad GTSinger and process all json to `metadata.json`.
