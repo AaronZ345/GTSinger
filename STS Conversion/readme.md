@@ -1,5 +1,7 @@
 # STS Conversion
 
+**This is a referenc version, please use [TCSinger](https://github.com/AaronZ345/TCSinger) for better technique control!**
+
 Download GTSinger and try STS conversion.
 
 ### Data Preparation 
