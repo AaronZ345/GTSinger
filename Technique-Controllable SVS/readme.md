@@ -1,6 +1,6 @@
 # Technique-Controllable SVS
 
-**This is a referenc version, please use TCSinger for technique control!**
+**This is a referenc version, please use [TCSinger](https://github.com/AaronZ345/TCSinger) for better technique control!**
 
 ### Data Preparation 
 
