@@ -8,9 +8,9 @@ Dataset and code of [GTSinger (NeurIPS 2024 Spotlight)](https://neurips.cc/virtu
 [![weixin](https://img.shields.io/badge/-WeChat@机器之心-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/B1Iqr-24l57f0MslzYEslA)
 [![weixin](https://img.shields.io/badge/-WeChat@PaperWeekly-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/6RLdUzJM5PItklKUTTNz2w)
 [![zhihu](https://img.shields.io/badge/-知乎-000000?logo=zhihu&logoColor=0084FF)](https://zhuanlan.zhihu.com/p/993933492)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset)](https://huggingface.co/datasets/GTSinger/GTSinger)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset)](https://huggingface.co/datasets/AaronZ345/GTSinger)
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-Link-blue?logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1xcdvCxNAEEfJElt7sEP-xT8dMKxn1_Lz?usp=drive_link)
-[![GitHub Stars](https://img.shields.io/github/stars/GTSinger/GTSinger?style=social)](https://github.com/GTSinger/GTSinger)
+[![GitHub Stars](https://img.shields.io/github/stars/AaronZ345/GTSinger?style=social)](https://github.com/AaronZ345/GTSinger)
 
 We introduce GTSinger, a large Global, multi-Technique, free-to-use, high-quality singing corpus with realistic music scores, designed for all singing tasks, along with its benchmarks.
 
@@ -51,11 +51,11 @@ Also, you can visit our [Demo Page](https://gtsinger.github.io/) for the audio s
 
 ### Where to download
 
-Click [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset)](https://huggingface.co/datasets/GTSinger/GTSinger) to access our **full dataset** (audio along with TextGrid, json, musicxml) and **processed data** (metadata.json, phone_set.json, spker_set.json) on Hugging Face **for free**! Hope our data is helpful for your research.
+Click [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset)](https://huggingface.co/datasets/AaronZ345/GTSinger) to access our **full dataset** (audio along with TextGrid, json, musicxml) and **processed data** (metadata.json, phone_set.json, spker_set.json) on Hugging Face **for free**! Hope our data is helpful for your research.
 
 Besides, we also provide our dataset on [![Google Drive](https://img.shields.io/badge/Google%20Drive-Link-blue?logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1xcdvCxNAEEfJElt7sEP-xT8dMKxn1_Lz?usp=drive_link).
 
-**Please note that, if you are using GTSinger, it means that you have accepted the terms of [license](https://github.com/GTSinger/GTSinger/blob/master/dataset_license.md).**
+**Please note that, if you are using GTSinger, it means that you have accepted the terms of [license](https://github.com/AaronZ345/GTSinger/blob/master/dataset_license.md).**
 
 ### Data Architecture
 
@@ -201,4 +201,4 @@ If you find this code useful in your research, please cite our work:
 
 Any organization or individual is prohibited from using any technology mentioned in this paper to generate someone's singing without his/her consent, including but not limited to government leaders, political figures, and celebrities. If you do not comply with this item, you could be in violation of copyright laws.
 
- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=GTSinger/GTSinger)
+ ![visitors](https://visitor-badge.laobi.icu/badge?page_id=AaronZ345/GTSinger)
