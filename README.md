@@ -5,6 +5,7 @@
 Dataset and code of [GTSinger (NeurIPS 2024 Spotlight)](https://neurips.cc/virtual/2024/poster/97428): A Global Multi-Technique Singing Corpus with Realistic Music Scores for All Singing Tasks.
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2409.13832)
+[![Demo](https://img.shields.io/badge/🚀%20Demo%20Page-blue)](https://gtsinger.github.io/) 
 [![weixin](https://img.shields.io/badge/-WeChat@机器之心-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/B1Iqr-24l57f0MslzYEslA)
 [![weixin](https://img.shields.io/badge/-WeChat@PaperWeekly-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/6RLdUzJM5PItklKUTTNz2w)
 [![zhihu](https://img.shields.io/badge/-知乎-000000?logo=zhihu&logoColor=0084FF)](https://zhuanlan.zhihu.com/p/993933492)
