@@ -22,6 +22,7 @@ Also, you can visit our [Demo Page](https://aaronz345.github.io/GTSingerDemo) fo
 
 ## News
 
+- 2026.09: We refined 9/9, all languages are proceesed!
 - 2025.02: We released all processed data of GTSinger and refined 7/9 languages!
 - 2024.09: We released the full dataset of GTSinger!
 - 2024.09: GTSinger is accepted by NeurIPS 2024 (Spotlight)!
@@ -39,7 +40,7 @@ Also, you can visit our [Demo Page](https://aaronz345.github.io/GTSingerDemo) fo
 
 ✅ Refine Chinese, English, Spanish, German, Russian, French, Italian annotations.
 
-🔲 Further refine Japanese, Korean annotations.
+✅ Further refine Japanese, Korean annotations.
 
 ## Key Features
 
