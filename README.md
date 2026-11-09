@@ -6,7 +6,7 @@
   <strong><a href="https://aaronz345.github.io/">Yu&nbsp;Zhang</a></strong>, Changhao&nbsp;Pan, Wenxiang&nbsp;Guo, Ruiqi&nbsp;Li, Zhiyuan&nbsp;Zhu, Jialei&nbsp;Wang,
   Wenhao&nbsp;Xu, Jingyu&nbsp;Lu, Zhiqing&nbsp;Hong, Chuxin&nbsp;Wang, LiChao&nbsp;Zhang, Jinzheng&nbsp;He,
   Ziyue&nbsp;Jiang, Yuxin&nbsp;Chen, Chen&nbsp;Yang, Jiecheng&nbsp;Zhou, Xinyu&nbsp;Cheng, Zhou&nbsp;Zhao
-&nbsp;·&nbsp;<img src="https://www.zju.edu.cn/_upload/article/images/c3/98/1fb1d281492eb477a098ef7a2901/05966b26-ab45-470d-94c1-99b1e02d12f4.png" width="38" alt="" />&nbsp;<em>Zhejiang&nbsp;University</em>
+&ensp;<img src="assets/readme/affiliation-zju.svg" align="absmiddle" alt="Zhejiang University" />
 </p>
 
 <p>
