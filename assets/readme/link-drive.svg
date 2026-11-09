@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="32" viewBox="0 0 119 32">
+  <title>Google Drive</title>
+  <!-- Icon: Font Awesome by Fonticons, Inc., CC BY 4.0 (https://fontawesome.com/license/free). -->
+  <style>
+    .surface { fill: #fff; stroke: #dce5ee }
+    .label { fill: #245a96 }
+    @media (prefers-color-scheme: dark) {
+      .surface { fill: #161b22; stroke: #374356 }
+      .label { fill: #a5ccf3 }
+    }
+  </style>
+  <rect class="surface" x=".5" y=".5" width="118" height="31" rx="6"/>
+  <g class="label" transform="translate(8.000 9.500) scale(0.025391)"><path d="M339 314.9L175.4 32 336.6 32 500.2 314.9 339 314.9zM201.5 338.5l-80.6 141.5 310.5 0 80.6-141.5-310.5 0zM154.1 67.4L0 338.5 80.6 480 237 208.8 154.1 67.4z"/></g>
+  <text class="label" x="27" y="16" dominant-baseline="central" font-family="system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.54" font-weight="500">Google Drive</text>
+</svg>

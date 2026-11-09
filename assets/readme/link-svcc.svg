@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="32" viewBox="0 0 104 32">
+  <title>SVCC 2025</title>
+  <!-- Icon: Font Awesome by Fonticons, Inc., CC BY 4.0 (https://fontawesome.com/license/free). -->
+  <style>
+    .surface { fill: #fff; stroke: #dce5ee }
+    .label { fill: #245a96 }
+    @media (prefers-color-scheme: dark) {
+      .surface { fill: #161b22; stroke: #374356 }
+      .label { fill: #a5ccf3 }
+    }
+  </style>
+  <rect class="surface" x=".5" y=".5" width="103" height="31" rx="6"/>
+  <g class="label" transform="translate(8.000 9.500) scale(0.025391)"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0-201.4 201.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 96C35.8 96 0 131.8 0 176L0 432c0 44.2 35.8 80 80 80l256 0c44.2 0 80-35.8 80-80l0-80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 80c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l80 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 96z"/></g>
+  <text class="label" x="25" y="16" dominant-baseline="central" font-family="system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.54" font-weight="500">SVCC 2025</text>
+</svg>
