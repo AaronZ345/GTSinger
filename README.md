@@ -1,192 +1,93 @@
-#  GTSinger: A Global Multi-Technique Singing Corpus with Realistic Music Scores for All Singing Tasks
+<div align="center">
 
-#### Yu Zhang*, Changhao Pan*, Wenxiang Guo*, Ruiqi Li, Zhiyuan Zhu, Jialei Wang, Wenhao Xu, Jingyu Lu, Zhiqing Hong, Chuxin Wang, LiChao Zhang, Jinzheng He, Ziyue Jiang, Yuxin Chen, Chen Yang, Jiecheng Zhou, Xinyu Cheng, Zhou Zhao | Zhejiang University
+# GTSinger
 
-Dataset and code of [GTSinger (NeurIPS 2024 Spotlight)](https://neurips.cc/virtual/2024/poster/97428): A Global Multi-Technique Singing Corpus with Realistic Music Scores for All Singing Tasks.
+**A global multi-technique singing corpus with realistic music scores**
 
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2409.13832)
-[![Demo](https://img.shields.io/badge/🚀%20Demo%20Page-blue)](https://aaronz345.github.io/GTSingerDemo) 
-[![SVCC 2025](https://img.shields.io/badge/🏆%20SVCC%202025-blue)](https://www.vc-challenge.org/)
-[![weixin](https://img.shields.io/badge/-WeChat@机器之心-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/B1Iqr-24l57f0MslzYEslA)
-[![weixin](https://img.shields.io/badge/-WeChat@PaperWeekly-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/6RLdUzJM5PItklKUTTNz2w)
-[![zhihu](https://img.shields.io/badge/-知乎-000000?logo=zhihu&logoColor=0084FF)](https://zhuanlan.zhihu.com/p/993933492)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset)](https://huggingface.co/datasets/AaronZ345/GTSinger)
-[![Google Drive](https://img.shields.io/badge/Google%20Drive-Link-blue?logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1xcdvCxNAEEfJElt7sEP-xT8dMKxn1_Lz?usp=drive_link)
-[![GitHub Stars](https://img.shields.io/github/stars/AaronZ345/GTSinger?style=social&label=GitHub+Stars)](https://github.com/AaronZ345/GTSinger)
+[NeurIPS 2024 Spotlight](https://neurips.cc/virtual/2024/poster/97428)
 
-We introduce GTSinger, a large Global, multi-Technique, free-to-use, high-quality singing corpus with realistic music scores, designed for all singing tasks, along with its benchmarks.
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square)](https://arxiv.org/abs/2409.13832) [![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-ffd21e?style=flat-square)](https://huggingface.co/datasets/AaronZ345/GTSinger) [![Demo](https://img.shields.io/badge/Demo-Samples-2563eb?style=flat-square)](https://aaronz345.github.io/GTSingerDemo) [![Stars](https://img.shields.io/github/stars/AaronZ345/GTSinger?style=flat-square)](https://github.com/AaronZ345/GTSinger)
 
-We provide the corpus and processing codes for our dataset and benchmarks' implementation in this repository. 
+[Download](#dataset) · [Data format](docs/data-format.md) · [Preprocessing](docs/data-processing.md) · [Benchmarks](#benchmarks) · [Citation](#citations)
 
-Also, you can visit our [Demo Page](https://aaronz345.github.io/GTSingerDemo) for the audio samples of our dataset as well as the results of our benchmarks.
+</div>
 
-## News
+| Singing | Paired speech | Singers | Languages | Singing techniques |
+| :---: | :---: | :---: | :---: | :---: |
+| 80.59 hours | 16.16 hours | 20 | 9 | 6 |
 
-- 2026.09: We refined 9/9, all languages are proceesed!
-- 2025.02: We released all processed data of GTSinger and refined 7/9 languages!
-- 2024.09: We released the full dataset of GTSinger!
-- 2024.09: GTSinger is accepted by NeurIPS 2024 (Spotlight)!
-- 2024.05: We released the code of GTSinger!
+GTSinger contains studio-recorded singing, paired speech, manual phoneme alignments, technique annotations, global style labels, and realistic music scores. The repository provides data-processing tools and implementations of four benchmark tasks.
 
-## TODO List
-
-✅ Release the code.
-
-✅ Release the full dataset.
-
-✅ Refine the paired speech data of each language.
-
-✅ Release the processed data of each language and all data.
-
-✅ Refine Chinese, English, Spanish, German, Russian, French, Italian annotations.
-
-✅ Further refine Japanese, Korean annotations.
-
-## Key Features
-
-- **80.59 hours of singing voices** in GTSinger are recorded in professional studios by skilled singers, ensuring **high quality and clarity**, forming the largest recorded singing dataset.
-- Contributed by **20 singers** across **nine widely spoken languages** (Chinese, English, Japanese, Korean, Russian, Spanish, French, German, and Italian) and all four vocal ranges, GTSinger enables zero-shot SVS and style transfer models to learn diverse timbres and styles.
-- GTSinger provides **controlled comparison** and **phoneme-level annotations** of **six singing techniques** (mixed voice, falsetto, breathy, pharyngeal, vibrato, and glissando) for songs, thereby facilitating singing technique modeling, recognition, and control.
-- Unlike fine-grained music scores, GTSinger features **realistic music scores** with regular note duration, assisting singing models in learning and adapting to real-world musical composition.
-- The dataset includes **manual phoneme-to-audio alignments, global style labels** (singing method, emotion, range, and pace), and **16.16 hours of paired speech**, ensuring comprehensive annotations and broad task suitability.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AaronZ345/GTSingerDemo/f38fb85deaa2650313a57d4e12d7e81f0bf6887c/assets/fig1-DuVB278S.png" width="100%" alt="GTSinger pairs singing and speech with aligned TextGrid annotations and MusicXML scores, organized by language, singer, technique, and song." />
+</p>
 
 ## Dataset
 
-### Where to download
+**The full dataset and processed subsets are available. Annotations for all nine languages were refined by September 2026.**
 
-Click [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset)](https://huggingface.co/datasets/AaronZ345/GTSinger) to access our **full dataset** (audio along with TextGrid, json, musicxml) and **processed data** (metadata.json, phone_set.json, spker_set.json) on Hugging Face **for free**! Hope our data is helpful for your research.
+| Resource | Contents | Access |
+| --- | --- | --- |
+| Full recordings and annotations | WAV audio, TextGrid alignments, per-recording JSON, and MusicXML scores | [Hugging Face](https://huggingface.co/datasets/AaronZ345/GTSinger) |
+| Processed subsets | `metadata.json`, `phone_set.json`, and `spker_set.json` | [Hugging Face](https://huggingface.co/datasets/AaronZ345/GTSinger) |
+| Download mirror | Dataset files | [Google Drive](https://drive.google.com/drive/folders/1xcdvCxNAEEfJElt7sEP-xT8dMKxn1_Lz?usp=drive_link) |
+| Terms of use | Dataset license | [Read the license](dataset_license.md) |
 
-Besides, we also provide our dataset on [![Google Drive](https://img.shields.io/badge/Google%20Drive-Link-blue?logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1xcdvCxNAEEfJElt7sEP-xT8dMKxn1_Lz?usp=drive_link).
+Using GTSinger means accepting the [dataset license](dataset_license.md).
 
-**Please note that, if you are using GTSinger, it means that you have accepted the terms of [license](https://github.com/AaronZ345/GTSinger/blob/master/dataset_license.md).**
+The languages are Chinese, English, Japanese, Korean, Russian, Spanish, French, German, and Italian. The six annotated techniques are mixed voice, falsetto, breathy, pharyngeal, vibrato, and glissando. Mixed voice and falsetto share one technique-folder category. Recordings cover all four vocal ranges and use 48 kHz, 24-bit WAV audio.
 
-### Data Architecture
+Choose the processed subset for your task, update its audio paths for your machine, and follow the corresponding benchmark guide below. The [data-format guide](docs/data-format.md) explains the control/technique groups, paired speech, annotations, and directory layout.
 
-Our dataset is organized hierarchically. 
+## Benchmarks
 
-It presents nine top-level folders, each corresponding to a distinct language. 
+| Task | Implementation | Related models |
+| --- | --- | --- |
+| Technique-controllable singing voice synthesis | [Guide](Technique-Controllable%20SVS/readme.md) | [TCSinger](https://github.com/AaronZ345/TCSinger) |
+| Technique recognition | [Guide](Tech-Recognition/readme.md) | Included benchmark |
+| Style transfer | [Guide](Style%20Transfer/readme.md) | [StyleSinger](https://github.com/AaronZ345/StyleSinger), [TCSinger](https://github.com/AaronZ345/TCSinger) |
+| Speech-to-singing conversion | [Guide](STS%20Conversion/readme.md) | [AlignSTS](https://github.com/RickyL-2000/AlignSTS) |
 
-Within each language folder, there are five sub-folders, each representing a specific singing technique.
+Each benchmark has its own environment and configuration. For dataset validation or annotation processing, start with the [preprocessing guide](docs/data-processing.md).
 
-These technique folders contain numerous song entries, with each song further divided into several controlled comparison groups: a control group (natural singing without the specific technique), and a technique group (densely employing the specific technique).
+## Preprocessing
 
-Our singing voices and speech are recorded at a 48kHz sampling rate with 24-bit resolution in WAV format. 
-
-Alignments and annotations are provided in TextGrid files, including word boundaries, phoneme boundaries, phoneme-level annotations for six techniques, and global style labels (singing method, emotion, pace, and range). 
-
-We also provide realistic music scores in musicxml format.
-
-Notably, we provide an additional JSON file for each singing voice, facilitating data parsing and processing for singing models.
-
-Here is the data structure of our dataset:
-
-```
-.
-├── Chinese
-│   ├── ZH-Alto-1
-│   └── ZH-Tenor-1
-├── English
-│   ├── EN-Alto-1
-│   │   ├── Breathy
-│   │   ├── Glissando
-│   │   │   └── my love
-│   │   │       ├── Control_Group
-│   │   │       ├── Glissando_Group
-│   │   │       └── Paired_Speech_Group
-│   │   ├── Mixed_Voice_and_Falsetto
-│   │   ├── Pharyngeal
-│   │   └── Vibrato
-│   ├── EN-Alto-2
-│   │   ├── Breathy
-│   │   ├── Glissando
-│   │   ├── Mixed_Voice_and_Falsetto
-│   │   ├── Pharyngeal
-│   │   └── Vibrato
-│   └── EN-Tenor-1
-│       ├── Breathy
-│       ├── Glissando
-│       ├── Mixed_Voice_and_Falsetto
-│       ├── Pharyngeal
-│       └── Vibrato
-├── French
-│   ├── FR-Soprano-1
-│   └── FR-Tenor-1
-├── German
-│   ├── DE-Soprano-1
-│   └── DE-Tenor-1
-├── Italian
-│   ├── IT-Bass-1
-│   ├── IT-Bass-2
-│   └── IT-Soprano-1
-├── Japanese
-│   ├── JA-Soprano-1
-│   └── JA-Tenor-1
-├── Korean
-│   ├── KO-Soprano-1
-│   ├── KO-Soprano-2
-│   └── KO-Tenor-1
-├── Russian
-│   └── RU-Alto-1
-└── Spanish
-    ├── ES-Bass-1
-    └── ES-Soprano-1
-```
-
-## Code for preprocessing data
-
-The code for processing the dataset is provided in the `./Data-Process`.
-
-### Dependencies
-
-A suitable [conda](https://docs.conda.io/en/latest/) environment named `gt_dataprocess` can be created and activated with:
+From the repository root:
 
 ```bash
+git clone https://github.com/AaronZ345/GTSinger.git
+cd GTSinger
 conda create -n gt_dataprocess python=3.8 -y
 conda activate gt_dataprocess
-pip install -r requirements.txt
+python -m pip install -r Data-Process/requirements.txt
 ```
 
-### Data Check
+| Directory | Purpose |
+| --- | --- |
+| [Data-Process/check](Data-Process/check) | Validate file layout, bandwidth, duration, F0, and mel spectrograms |
+| [Data-Process/process](Data-Process/process) | Convert annotations, add global labels, and segment singing or speech |
+| [Data-Process/utils](Data-Process/utils) | Phoneme and alignment utilities |
 
-The code for checking the dataset is provided in `./Data-Process/data_check/`, including the following files:
+See the [script guide](docs/data-processing.md) before running preprocessing on a new dataset.
 
-- `check_file_and_folder.py`: Check the file and folder structure of the dataset.
+<details>
+<summary>Release history and community links</summary>
 
-- `check_valid_bandwidth.py`: Check the sample rate and valid bandwidth of the dataset.
+- September 2026: completed annotation refinement for all nine languages.
+- February 2025: released all processed data and refined seven languages.
+- September 2024: released the full dataset; accepted to NeurIPS 2024 as a Spotlight.
+- May 2024: released the code.
 
-- `count_time.py`: Count the time of the singing voice and speech in the dataset.
+The code, full dataset, processed data, and paired-speech refinement are released. See [SVCC 2025](https://www.vc-challenge.org/), [机器之心](https://mp.weixin.qq.com/s/B1Iqr-24l57f0MslzYEslA), [PaperWeekly](https://mp.weixin.qq.com/s/6RLdUzJM5PItklKUTTNz2w), and [知乎](https://zhuanlan.zhihu.com/p/993933492).
 
-- `plot_f0.py`: Plot the pitch(f0) of the singing voice audio.
+</details>
 
-- `plot_mel.py`: Plot the mel-spectrogram of audio.
+<details>
+<summary>Authors and affiliation</summary>
 
-### Data Preprocessing
+Yu Zhang*, Changhao Pan*, Wenxiang Guo*, Ruiqi Li, Zhiyuan Zhu, Jialei Wang, Wenhao Xu, Jingyu Lu, Zhiqing Hong, Chuxin Wang, LiChao Zhang, Jinzheng He, Ziyue Jiang, Yuxin Chen, Chen Yang, Jiecheng Zhou, Xinyu Cheng, Zhou Zhao | Zhejiang University
 
-The code for preprocessing the dataset is provided in `./Data-Process/data_preprocess/`, including the following files:
-
-- `gen_final_json.py`: Generate the final JSON file for each singing voice based on the TextGrid file and musicxml file that have been annotated.
-
-- `global2tgjson.py`: Add global style labels to the JSON file and TextGrid file.
-
-- `seg_singing.py` & `seg_speech.py`: Segment the singing voice and speech based on the TextGrid file.
-
-## Code for benchmarks
-
-### Technique Controllable Singing Voice Synthesis
-
-The code for our benchmarks for [Technique Controllable Singing Voice Synthesis](./Technique-Controllable%20SVS/readme.md). You can also use GTSinger to train [TCSinger](https://github.com/AaronZ345/TCSinger)!
-
-### Technique Recognition
-
-The code for our benchmarks for [Technique Recognition](./Tech-Recognition/readme.md).
-
-### Style Transfer
-
-The code for our benchmarks for [Style Transfer](./Style%20Transfer/readme.md). You can use GTSinger to train [StyleSinger](https://github.com/AaronZ345/StyleSinger) and [TCSinger](https://github.com/AaronZ345/TCSinger)!
-
-### Speech-to-Singing Conversion
-
-The code for our benchmarks for [Speech-to-Singing-Conversion](./STS%20Conversion/readme.md). You can use GTSinger to train [AlignSTS](https://github.com/RickyL-2000/AlignSTS)!
+</details>
 
 ## Citations ##
 
@@ -203,5 +104,3 @@ If you find this code useful in your research, please cite our work:
 ## Disclaimer ##
 
 Any organization or individual is prohibited from using any technology mentioned in this paper to generate someone's singing without his/her consent, including but not limited to government leaders, political figures, and celebrities. If you do not comply with this item, you could be in violation of copyright laws.
-
- ![visitors](https://visitor-badge.laobi.icu/badge?page_id=AaronZ345/GTSinger)
