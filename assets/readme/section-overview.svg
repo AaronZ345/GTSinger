@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <!-- Icon: Font Awesome by Fonticons, Inc., CC BY 4.0 (https://fontawesome.com/license/free). -->
+  <style>
+    .tile { fill: #edf4fb }
+    .glyph { fill: #245a96 }
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #1b2b40 }
+      .glyph { fill: #a5ccf3 }
+    }
+  </style>
+  <rect class="tile" width="23" height="23" rx="6"/>
+  <g class="glyph" transform="translate(5.000 5.000) scale(0.025391)"><path d="M64 96c0-17.7 14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 288 96 0 0-128c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32 0 0 128c0 17.7-14.3 32-32 32l-160 0c-17.7 0-32-14.3-32-32l0-288-96 0 0 128c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l32 0 0-128z"/></g>
+</svg>
