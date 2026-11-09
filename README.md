@@ -1,16 +1,23 @@
-<div align="center">
+# GTSinger: A Global Multi-Technique Singing Corpus with Realistic Music Scores for All Singing Tasks
 
-# GTSinger
-
-**A global multi-technique singing corpus with realistic music scores**
+Yu Zhang, Changhao Pan, Wenxiang Guo, Ruiqi Li, Zhiyuan Zhu, Jialei Wang, Wenhao Xu, Jingyu Lu, Zhiqing Hong, Chuxin Wang, LiChao Zhang, Jinzheng He, Ziyue Jiang, Yuxin Chen, Chen Yang, Jiecheng Zhou, Xinyu Cheng, Zhou Zhao\
+*Zhejiang University*
 
 [NeurIPS 2024 Spotlight](https://neurips.cc/virtual/2024/poster/97428)
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square)](https://arxiv.org/abs/2409.13832) [![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-ffd21e?style=flat-square)](https://huggingface.co/datasets/AaronZ345/GTSinger) [![Demo](https://img.shields.io/badge/Demo-Samples-2563eb?style=flat-square)](https://aaronz345.github.io/GTSingerDemo) [![Stars](https://img.shields.io/github/stars/AaronZ345/GTSinger?style=flat-square)](https://github.com/AaronZ345/GTSinger)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2409.13832)
+[![Demo](https://img.shields.io/badge/🚀%20Demo%20Page-blue)](https://aaronz345.github.io/GTSingerDemo)
+[![SVCC 2025](https://img.shields.io/badge/🏆%20SVCC%202025-blue)](https://www.vc-challenge.org/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue?label=Dataset)](https://huggingface.co/datasets/AaronZ345/GTSinger)
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-Link-blue?logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/1xcdvCxNAEEfJElt7sEP-xT8dMKxn1_Lz?usp=drive_link)
+[![GitHub Stars](https://img.shields.io/github/stars/AaronZ345/GTSinger?style=social&label=GitHub+Stars)](https://github.com/AaronZ345/GTSinger)
 
-[Download](#dataset) · [Data format](docs/data-format.md) · [Preprocessing](docs/data-processing.md) · [Benchmarks](#benchmarks) · [Citation](#citations)
+[![机器之心](https://img.shields.io/badge/-WeChat@机器之心-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/B1Iqr-24l57f0MslzYEslA)
+[![PaperWeekly](https://img.shields.io/badge/-WeChat@PaperWeekly-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/6RLdUzJM5PItklKUTTNz2w)
+[![知乎](https://img.shields.io/badge/-知乎-000000?logo=zhihu&logoColor=0084FF)](https://zhuanlan.zhihu.com/p/993933492)
 
-</div>
+> **Start here** · [Download](#dataset) · [Data format](docs/data-format.md) · [Preprocessing](docs/data-processing.md)\
+> **Reference** · [Benchmarks](#benchmarks) · [Citation](#citations)
 
 | Singing | Paired speech | Singers | Languages | Singing techniques |
 | :---: | :---: | :---: | :---: | :---: |
@@ -71,21 +78,14 @@ python -m pip install -r Data-Process/requirements.txt
 See the [script guide](docs/data-processing.md) before running preprocessing on a new dataset.
 
 <details>
-<summary>Release history and community links</summary>
+<summary>Release history</summary>
 
 - September 2026: completed annotation refinement for all nine languages.
 - February 2025: released all processed data and refined seven languages.
 - September 2024: released the full dataset; accepted to NeurIPS 2024 as a Spotlight.
 - May 2024: released the code.
 
-The code, full dataset, processed data, and paired-speech refinement are released. See [SVCC 2025](https://www.vc-challenge.org/), [机器之心](https://mp.weixin.qq.com/s/B1Iqr-24l57f0MslzYEslA), [PaperWeekly](https://mp.weixin.qq.com/s/6RLdUzJM5PItklKUTTNz2w), and [知乎](https://zhuanlan.zhihu.com/p/993933492).
-
-</details>
-
-<details>
-<summary>Authors and affiliation</summary>
-
-Yu Zhang*, Changhao Pan*, Wenxiang Guo*, Ruiqi Li, Zhiyuan Zhu, Jialei Wang, Wenhao Xu, Jingyu Lu, Zhiqing Hong, Chuxin Wang, LiChao Zhang, Jinzheng He, Ziyue Jiang, Yuxin Chen, Chen Yang, Jiecheng Zhou, Xinyu Cheng, Zhou Zhao | Zhejiang University
+The code, full dataset, processed data, and paired-speech refinement are released.
 
 </details>
 
